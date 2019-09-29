@@ -1,0 +1,99 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    background-color: dimgray;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  td, th{
+    border-style: inset;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  h1 {
+	  background-color: lightgrey;
+	  width: 90%;
+	  border: 15px solid green;
+	  padding: 50px;
+	  margin: 20px;
+	}
+	 
+	.grid-container {
+	  display: grid;
+	  grid-template-columns: auto auto;
+	  background-color: #333;
+	  padding: 10px;
+	}
+	.grid-item {
+	  background-color: rgba(255, 255, 255, 0.8);
+	  border: 1px solid #333;
+	  padding: 20px;
+	  font-size: 30px;
+	  text-align: center;
+	}
+	
+	.flex-container {
+	  display: flex;
+	  flex-wrap: nowrap;
+	}
+	
+	@media only screen and (max-width: 768px) {
+	  /* For mobile phones: */
+	  [class*="grid-container"] {
+		grid-template-columns: auto;
+	  }
+}
